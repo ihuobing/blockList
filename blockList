@@ -1,0 +1,102 @@
+# 正则
+# Fake News
+\b(falundafa|minghui|epochtimes|ntdtv|nytimes|voachinese|appledaily|nextdigital|dalailama|bloomberg|independent|freetibet|citizenpowerfor|cirosantilli|chinadigitaltimes)\b
+(.+\.)?(everylittled|cool3c|udn|voacantonese|voanews|bitterwinter|christianstudy|learnfalungong|ad2iction|viad|tnlmedia|becomingaces|flipboard|wenxuecity)\.(cn|com|org|net|club|fr|tw|hk|com\.tw)
+(.+\.)?(rfa|yam|bannedbook|soundofhope|shenyunperformingarts|zhuichaguoji|fawanghuihui|amnesty|hrw|zhengjian|mingjinglive|botanwang|falunaz|falungong)\.(cn|com|org|net|club|fr|tw|hk|com\.tw)
+(.+\.)?(bbc|gtv|jw|dw|mpweekly|theinitium|thenewslens|aboluowang|wujieliulan|yibaochina|renminbao|dafahao|dongtaiwang|ninecommentaries|shenyun|lagranepoca)\.(cn|com|org|net|club|fr|tw|hk|com\.tw)
+(.+\.)?(ntd\.tv|storm\.mg|pincong\.rocks|chinapress\.com\.my|tibet\.net|creaders\.net|ydn\.com\.tw|erabaru\.net)
+(.+\.)?(taketla\.zaiko|sportsv|2047|shu|bbc|wsj|rfi|upmedia\.mg|ultrasurf)\.(io|net|name|best|co\.uk|com|fr|us)
+(.+\.)?(ltn|cup|inside|news\.agentm|theaustralian)\.(com\.tw|com\.hk|com\.au)
+(.+\.)?(talk\.news\.pts|hancel|miraheze|hopto|efcc|irmct|roc-taiwan)\.(org)
+(.+\.)?(mingjingnews|inmediahk|chinaaffairs|breakgfw|chengmingmag|qi-gong|mhradio|edoors|xizang-zhiye|secretchina|dajiyuan|boxun|chinaaid|dwnews|huaglad|oneplusnews|epochweekly|cn\.rfi)\.(cn|com|org|net|club|net|fr|tw|hk|eu|info|me)
+(.+\.)?(tuidang|tuidang\.ddns|xinsheng|newhighlandvision|jinpianwang)\.(cn|com|org|net|club|net|fr|tw|hk|eu|info|me|rocks|dev)
+(.+\.)?(esu)\.wiki
+(.+\.)?(64tianwang|beijingspring|broadpressinc|chenpokong|chinesepen|dalailamaworld|dalianmeng|fgmtv|hrichina|huanghuagang|hxwq|jiangweiping|lantosfoundation|minzhuzhongguo|ned|ogate|shenzhoufilm|tiantibooks|tibetpost|truthmoviegroup.wixsite|uhrp|uyghuramerican|vot|weijingsheng).(org|com|net)
+
+# gov or edu
+.*gov.*
+.*edu.*
+.*go.kr.*
+
+# 百度/腾讯/高德定位
+(api|ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map|)\.(baidu|n\.shifen)\.com
+(lbs|lbssp|apis)\.map\.qq\.com
+(apilocate|restapi)\.amap\.com
+
+##8 禁止垃圾邮件/临时邮箱
+(Sub­ject|HELO|SMTP) 
+(^.*\@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168)\.(info|biz|com|de|net|org|me|la)
+
+# 迅雷
+(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
+(ed2k|magnet:|bt_key|tor­rent|.tor­rent|peer_id=|in­fo_hash|get_peers|find­_n­ode|Bit­Tor­rent|an­nounce_peer|announce|an­nounce.php?passkey=)
+
+# 惹不起
+(.+\.)?(adsafe)\.(com)
+(.+\.)?(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan)\.(cn|com)
+(\.guanjia\.qq\.com|qqpcmgr|QQPCMGR)
+(.+\.)?(rising|kingsoft|duba|xindubawukong|jinshanduba)\.(com|net|org)
+
+
+# 不健康
+(.+\.)?(netvigator|torproject).(com|cn|net|org)
+
+# 金融
+(.+\.)?(visa|mastercard|jcbcard|bank).*
+(.+\.)?(mycard|beanfun|gash|gashpoint|kwok7).*
+(.+\.)?(metatrader4|metatrader5|mql5)\.(org|com|net)
+(.+\.|^)(alipay|tenpay|unionpay|yunshanfu|)\.(com\.cn|com|cn)
+(.+\.|^)(icbc|ccb|bc|cb|xb|spdb|boc|cdb|bankcomm|abchina|cmbchina|psbc|cebbank|cmbc|pingan|bank\.ecitic|cib|hxb|cgbchina|pbccrc\.org|adbc)\.(com\.cn|com|cn)
+(.+\.|^)(antpool|foundrydigital|f2pool|nanopool|viabtc|mining-dutch|solopool|hiveon|minergate|comining|give-me-coins|arsmine|baikalmine|litecoinpoo|clona|btc|slushpool).(com|cn|net|org|io|im|cc|pro|top|one|co|info)
+(.+\.|^)(pandaminer|maxhash|coinminerz|bwpool|poolin|uupool|miningcore|multipools|minexmr|sbicrypto|marathondh|emcd|luxor|sigmapool|okkong|hpt|minerium|ckpool|mmpool).(com|cn|net|org|io|im|cc|pro|top|one|co|info)
+(.+\.|^)(hashcity|uutest|sparkpool|qkl123|webkaka|2miners|51szzc|666pool|91pool|atticpool|anomp|aapool|ash-shanghai.globalpool|asia.zcoin.miningpoolhub|blackpool).(com|cn|net|org|io|im|cc|pro|top|one|co|info)
+(.+\.|^)(blockmasters|btchd|bitminter|bitcoin|bhdpool|bginpoolbaimin|bi-chi|bohemianpool|bixin|btcguild|batpool|bw|btcc|btc|bitfury|bitclubnetwork|beepool|coinhive|chainpool).(com|cn|net|org|io|im|cc|pro|top|one|co|info)
+(.+\.|^)(connectbtc|cybtc|canoepool|cryptograben|cryptonotepool|coinotron|dashcoinpool|dxpool|dwarfpool|dpool|dmpools|everstake|epool|ethpool|ethfans|easy2mine|ethermine|extremepool).(com|cn|net|org|io|im|cc|pro|top|one|co|info)
+(.+\.|^)(firepool|fir|fkpool|flypool|f3pool|gridcash|gath3r|grin-pool|grinmint|gbminers|get.bi-chi|globalpool|give-me-ltc|honeyminer|honestmining|hashquark|hashrabbit).(com|cn|net|org|io|im|cc|pro|top|one|co|info)
+(.+\.|^)(huobi|okex|kucoin|coinex|coingecko|hummerpool|hdpool|h-pool|hashvault|hpool|huobipool|haopool|pool.btc).(com|cn|net|org|io|im|cc|pro|top|one|co|info)
+
+# 刷流量
+(.+\.)?(speed)\.(io)
+(.+\.)?(flows|miaoko).(pages).(dev)
+(.*\.||)(fast|cachefly|speedtest)\.(org|com|net|de)
+(.+\.)?(laomoe|jiyou|ssss|lolicp|vv1234|0z|4321q|868123|ksweb|mm126).(com|cloud|fun|cn|gs|xyz|cc)
+
+# IP探测
+(.+.|^)(whatismyip|whatismyipaddress|ipip|iplocation|myip|whatismybrowser).(cn|com|net|com|network)
+(.+.|^)(ipaddress|whoer|ip138).(org|com|net|my|to|co)
+
+# 统计/爬虫/大数据监测
+(.+\.|^)(miaozhen|cnzz|talkingdata).(cn|com)
+(.+\.)?(appadhoc)\.(com|net)
+(.+\.)?(dratio|um0|um1|umeng|umsns|umtrack|umtrack0|umtrack1|umtrack2|umv0|umv5|wrating|umengcloud)\.(cn|com)
+(.+\.)?(cnadid|digitalunion|kxid|mobid|shuzhundsj|shuzilm)\.(cn|com)
+(.+\.)?(3edc|appcpa|cpatrk|doudouknot|edutalkingdata|jielou|lnk0|lnk8|mpush|myzhongguojie|talkingdata|talkinggame|talkingnews|tddmp|tendcloud|tenddata|tengyuncloud|udrig|xdrig|xuefenxi)\.(com\.cn|com|cn|net)
+(.+\.)?(datayi|gio|giocdn|growin|growingio)\.(cn|com|ren)
+(.+\.)?(fengkongcloud|appgo|mob|sharesdk)\.(cn|com)
+(.+\.)?(42r|47r|5566ua|a0x|aurorapush|ausaas|e0n|japps|jglinks|jgmlink|jgshare|jiguang|jmlinks|jmlk|jpush|jpushoa|jsurvey|jvoice|kc9|linkjg|linksjg|mlinkj|mlinkjg|n0q|pushcfg|s0n|thering|xuanhk)\.(cn|com|io|co)
+(.+\.)?(12322app|abeacon|acloud|applk|baywest|cooltui|fangyi|ge|geatmap|geindex|gepush|getui|gl|huadan|igehuo|igetui|igexin|pusure|viyouhui)\.(com|cn|ac|net|ink|in|co)
+(.+\.|^)(tcbox|wappass|tieba|nsclick|sofire|gips0|afd|als|hmma|info|bgg|mbd|afdconf|).(tuisong|baidu|bdstatic)\.(cn|com|net)
+
+# 不适用代理的域名
+(.+\.)?(xuexi|rednet)\.(cn)
+(.+\.)?(cctv|cntv)\.(com|cn)
+(signup)\.(live|microsoft)\.(cn|com)
+(.+\.|^)(autonavi|xfinfr)\.(cn|com|net)
+(.+\.)?(189|10086|10010|10099)\.(com\.cn|com|cn)
+(.+\.)?(weixin|QQ|weixin110)\.(cn|com|net)
+
+# 购物
+(.+\.)?(zhuanzhuan|tmall|vip|1688|jd|taobao|pinduoduo|pddpic|yangkeduo|oneniceapp)\.(cn|com|net)
+
+# 社交
+(.+\.)?(xiaohongshu|xhscdn|weibo|zhihu|douban|renren|tangdou|duitang|sinaimg|soulapp|immomo|momocdn)\.(cn|com|net)
+(.+\.)?(oppo|bbsuc|xiaomi|coolapk|bbs\.iqoo|bbs\.meizu|bbs\.myzte|tieba\.baidu|realmebbs|oneplusbbs|bbs\.vivo|club\.huawei|club\.lenovo|rogbbs\.asus)\.(com\.cn|com|cn|net)
+
+#短视频
+(.+\.|^)(kskwai|kwaizt|gifshow|kuaishouzt|kwimgs|yximgs|kuaishoupay|ksapisrv|kuaishou)\.(cn|com|net)
+(amemv|bdurl|oceanengine|toutiao|baike|pstatp|snssdk|ctobsnssdk|awemeughun|douyin|douyincdn|douyinvod|douyinpic|douyinstatic|idouyinvod|byteactivity|bytecdn|byteeffecttos|bytegecko|bytegoofy|byteimg|bytescm|bytedance|bytemastatic|bytetos|byteacctimg|bytednsdoc|ecombdapi|ecombdimg|ecombdstatic|ibytedapm|xycdn|zijieapi|zjcdn)\.(cn|com|net)
+(.+\.|^)(izuiyou|pipigx|ixiaochuan)\.(com|cn)
+(.+\.|^)(bilibili|bilivideo)\.(com|cn)
+
+# 自定义 未整理
+(.+\.)?(cyberpolice|12315|12321|12377|110|12337|12389|jubao|8221110|81|12388|isc|12339|110\.qq|js12377).(org|com|net|cn|gov)
